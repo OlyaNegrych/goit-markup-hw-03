@@ -167,9 +167,12 @@ cursor: pointer;
 }
 
 /* Наши преимущества */
+.advantages {
+padding-bottom: 0;
+}
 
 .advantages.section .container {
-    display: flex;
+display: flex;
 }
 
 .advantages-title {
