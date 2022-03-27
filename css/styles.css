@@ -298,6 +298,7 @@ display: none;
     padding-left: 0;
     margin-bottom: 50px;
     text-align: center;
+    justify-content: center;
     }
 
 .filtr .item:not(:first-child) {
