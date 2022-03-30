@@ -16,8 +16,13 @@ letter-spacing: 0.03em;
 background-color: var(--background-color);
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, p {
     margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
@@ -50,6 +55,8 @@ background-color: var(--background-color);
  font-family: 'Raleway', sans-serif;
  font-size: 26px;
  line-height: 1.2;
+ font-weight: 700;
+ letter-spacing: 0.03em;
  }
 
 .logo {
@@ -80,7 +87,7 @@ color: var(--accent-color);
 
 .nav-list {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 
 .nav-list-item:not(:first-child) {
@@ -94,6 +101,10 @@ color: var(--accent-color);
 .nav-list-link {
     display: inline-block;
     padding: 32px 0;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .nav-list-link:hover,
@@ -104,13 +115,16 @@ color: var(--accent-color);
 .auth-nav {
     display: flex;
     margin-left: auto;
-    padding: 0;
+    /* padding: 0; */
 }
 
 .auth-nav-link {
 display: inline-block;
 padding: 32px 0;
 
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
 color: var(--text-color);
 }
 
@@ -137,6 +151,9 @@ color: var(--accent-color);
 }
 /* Герой */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: var(--footer-color);
     text-align: center;
    }
@@ -154,6 +171,7 @@ color: var(--accent-color);
 display: inline-block;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border: none;
 padding: 10px 32px;
 
 background-color: var(--accent-color);
@@ -181,7 +199,7 @@ display: none;
 
 .advantages-list {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 
 .advantages-item {
@@ -196,7 +214,7 @@ margin-left: 30px;
 margin-bottom: 10px;
 
 font-weight: 700;
-font-weight: 700;
+font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 text-align: left;
@@ -210,6 +228,11 @@ color: var(--text-color);
 }
 
 /* Чем мы занимаемся */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .work-title,
 .teem-title {
@@ -225,7 +248,7 @@ color: var(--title-text-color);
 
 .work-list {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 
 .work-list-item:not(:first-child) {
@@ -244,7 +267,7 @@ background-color: var(--secondary-bgr-color);
 
 .teem-list {
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 
 .teem-item {
@@ -329,7 +352,14 @@ background-color: var(--accent-color);
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    /* padding-left: 0; */
+}
+
+.card-text {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .portfolio-list-item:not(:nth-child(3n)) {
@@ -341,11 +371,7 @@ background-color: var(--accent-color);
 }
 
 .portfolio-list-item {
-padding-bottom: 20px;
-border: 1px solid #EEEEEE;
-
 width: 370px;
-background: var(--background-color);
 }
 
 .portfolio-list-link img {
@@ -353,8 +379,6 @@ margin-bottom: 20px;
 }
 
 .portfolio-item-title {
-margin-right: 24px;
-margin-left: 24px;
 margin-bottom: 4px;
 
 font-size: 18px;
@@ -366,9 +390,6 @@ color: var(--title-text-color);
 }
 
 .portfolio-item-text {
-margin-right: 24px;
-margin-left: 24px;
-
 font-size: 16px;
 line-height: 1.9;
 text-align: left;
@@ -392,7 +413,7 @@ color: var(--background-color);
 }
 
 .address {
-padding-left: 0;
+/* padding-left: 0; */
 }
 
 .place,
